@@ -5,7 +5,7 @@ easy for customers to deploy HPC environments on Google Cloud.
 
 In this tutorial you will use the HPC Toolkit to:
 
-* Deploy a [Slurm](https://github.com/GoogleCloudPlatform/slurm-gcp#readme) HPC cluster on
+* Deploy a [Slurm](https://github.com/ben-nag/a-slurm-gcp#readme) HPC cluster on
   Google Cloud
 * Use [Spack](https://spack.io/) to install the Gromacs application and all of
   its dependencies

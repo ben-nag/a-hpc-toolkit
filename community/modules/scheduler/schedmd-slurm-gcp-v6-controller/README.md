@@ -20,11 +20,11 @@ controller for optimal performance at different scales.
 > pip3 install -r https://raw.githubusercontent.com/GoogleCloudPlatform/slurm-gcp/6.4.2/scripts/requirements.txt
 > ```
 
-[slurm-gcp]: https://github.com/GoogleCloudPlatform/slurm-gcp/tree/6.4.2
-[slurm\_controller\_instance]: https://github.com/GoogleCloudPlatform/slurm-gcp/tree/6.4.2/terraform/slurm_cluster/modules/slurm_controller_instance
-[slurm\_instance\_template]: https://github.com/GoogleCloudPlatform/slurm-gcp/tree/6.4.2/terraform/slurm_cluster/modules/slurm_instance_template
+[slurm-gcp]: https://github.com/ben-nag/a-slurm-gcp/tree/6.4.2
+[slurm\_controller\_instance]: https://github.com/ben-nag/a-slurm-gcp/tree/6.4.2/terraform/slurm_cluster/modules/slurm_controller_instance
+[slurm\_instance\_template]: https://github.com/ben-nag/a-slurm-gcp/tree/6.4.2/terraform/slurm_cluster/modules/slurm_instance_template
 [slurm-ug]: https://goo.gle/slurm-gcp-user-guide.
-[requirements.txt]: https://github.com/GoogleCloudPlatform/slurm-gcp/blob/6.4.2/scripts/requirements.txt
+[requirements.txt]: https://github.com/ben-nag/a-slurm-gcp/blob/6.4.2/scripts/requirements.txt
 [enable\_cleanup\_compute]: #input\_enable\_cleanup\_compute
 [enable\_cleanup\_subscriptions]: #input\_enable\_cleanup\_subscriptions
 [enable\_reconfigure]: #input\_enable\_reconfigure
@@ -96,8 +96,8 @@ The HPC Toolkit team maintains the wrapper around the [slurm-on-gcp] terraform
 modules. For support with the underlying modules, see the instructions in the
 [slurm-gcp README][slurm-gcp-readme].
 
-[slurm-on-gcp]: https://github.com/GoogleCloudPlatform/slurm-gcp
-[slurm-gcp-readme]: https://github.com/GoogleCloudPlatform/slurm-gcp#slurm-on-google-cloud-platform
+[slurm-on-gcp]: https://github.com/ben-nag/a-slurm-gcp
+[slurm-gcp-readme]: https://github.com/ben-nag/a-slurm-gcp#slurm-on-google-cloud-platform
 
 ## License
 
@@ -134,17 +134,17 @@ limitations under the License.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_bucket"></a> [bucket](#module\_bucket) | terraform-google-modules/cloud-storage/google | ~> 3.0 |
-| <a name="module_cleanup_compute_nodes"></a> [cleanup\_compute\_nodes](#module\_cleanup\_compute\_nodes) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_destroy_nodes | 6.4.3&depth=1 |
-| <a name="module_cleanup_resource_policies"></a> [cleanup\_resource\_policies](#module\_cleanup\_resource\_policies) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_destroy_resource_policies | 6.4.3&depth=1 |
-| <a name="module_slurm_controller_instance"></a> [slurm\_controller\_instance](#module\_slurm\_controller\_instance) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/_slurm_instance | 6.4.3&depth=1 |
-| <a name="module_slurm_controller_template"></a> [slurm\_controller\_template](#module\_slurm\_controller\_template) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
-| <a name="module_slurm_files"></a> [slurm\_files](#module\_slurm\_files) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_files | 6.4.3&depth=1 |
-| <a name="module_slurm_login_instance"></a> [slurm\_login\_instance](#module\_slurm\_login\_instance) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_login_instance | 6.4.3&depth=1 |
-| <a name="module_slurm_login_template"></a> [slurm\_login\_template](#module\_slurm\_login\_template) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
-| <a name="module_slurm_nodeset"></a> [slurm\_nodeset](#module\_slurm\_nodeset) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_nodeset | 6.4.3&depth=1 |
-| <a name="module_slurm_nodeset_template"></a> [slurm\_nodeset\_template](#module\_slurm\_nodeset\_template) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
-| <a name="module_slurm_nodeset_tpu"></a> [slurm\_nodeset\_tpu](#module\_slurm\_nodeset\_tpu) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_nodeset_tpu | 6.4.3&depth=1 |
-| <a name="module_slurm_partition"></a> [slurm\_partition](#module\_slurm\_partition) | github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_partition | 6.4.3&depth=1 |
+| <a name="module_cleanup_compute_nodes"></a> [cleanup\_compute\_nodes](#module\_cleanup\_compute\_nodes) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_destroy_nodes | 6.4.3&depth=1 |
+| <a name="module_cleanup_resource_policies"></a> [cleanup\_resource\_policies](#module\_cleanup\_resource\_policies) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_destroy_resource_policies | 6.4.3&depth=1 |
+| <a name="module_slurm_controller_instance"></a> [slurm\_controller\_instance](#module\_slurm\_controller\_instance) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/_slurm_instance | 6.4.3&depth=1 |
+| <a name="module_slurm_controller_template"></a> [slurm\_controller\_template](#module\_slurm\_controller\_template) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
+| <a name="module_slurm_files"></a> [slurm\_files](#module\_slurm\_files) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_files | 6.4.3&depth=1 |
+| <a name="module_slurm_login_instance"></a> [slurm\_login\_instance](#module\_slurm\_login\_instance) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_login_instance | 6.4.3&depth=1 |
+| <a name="module_slurm_login_template"></a> [slurm\_login\_template](#module\_slurm\_login\_template) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
+| <a name="module_slurm_nodeset"></a> [slurm\_nodeset](#module\_slurm\_nodeset) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_nodeset | 6.4.3&depth=1 |
+| <a name="module_slurm_nodeset_template"></a> [slurm\_nodeset\_template](#module\_slurm\_nodeset\_template) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_instance_template | 6.4.3&depth=1 |
+| <a name="module_slurm_nodeset_tpu"></a> [slurm\_nodeset\_tpu](#module\_slurm\_nodeset\_tpu) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_nodeset_tpu | 6.4.3&depth=1 |
+| <a name="module_slurm_partition"></a> [slurm\_partition](#module\_slurm\_partition) | github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_partition | 6.4.3&depth=1 |
 
 ## Resources
 

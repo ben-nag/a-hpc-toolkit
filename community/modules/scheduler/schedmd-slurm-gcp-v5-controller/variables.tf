@@ -15,7 +15,7 @@
  */
 
 # Most variables have been sourced and modified from the SchedMD/slurm-gcp
-# github repository: https://github.com/GoogleCloudPlatform/slurm-gcp/tree/5.10.6
+# github repository: https://github.com/ben-nag/a-slurm-gcp/tree/5.10.6
 
 variable "access_config" {
   description = "Access configurations, i.e. IPs via which the VM instance can be accessed via the Internet."
@@ -214,7 +214,7 @@ variable "enable_cleanup_compute" {
     placement groups) managed by this module, when cluster is destroyed.
 
     NOTE: Requires Python and pip packages listed at the following link:
-    https://github.com/GoogleCloudPlatform/slurm-gcp/blob/3979e81fc5e4f021b5533a23baa474490f4f3614/scripts/requirements.txt
+    https://github.com/ben-nag/a-slurm-gcp/blob/3979e81fc5e4f021b5533a23baa474490f4f3614/scripts/requirements.txt
 
     *WARNING*: Toggling this may impact the running workload. Deployed compute nodes
     may be destroyed and their jobs will be requeued.
@@ -229,7 +229,7 @@ variable "enable_cleanup_subscriptions" {
     cluster is destroyed.
 
     NOTE: Requires Python and pip packages listed at the following link:
-    https://github.com/GoogleCloudPlatform/slurm-gcp/blob/3979e81fc5e4f021b5533a23baa474490f4f3614/scripts/requirements.txt
+    https://github.com/ben-nag/a-slurm-gcp/blob/3979e81fc5e4f021b5533a23baa474490f4f3614/scripts/requirements.txt
 
     *WARNING*: Toggling this may temporarily impact var.enable_reconfigure behavior.
     EOD

@@ -23,7 +23,7 @@ vars:
   zone: us-central1-a
   gpu_zones: [us-central1-a, us-central1-b, us-central1-c, us-central1-f]
   slurm_image:
-    # Visit https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#published-image-family
+    # Visit https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#published-image-family
     # for a list of valid family options with Slurm
     family: slurm-gcp-5-10-hpc-centos-7
     project: schedmd-slurm-public

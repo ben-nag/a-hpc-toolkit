@@ -132,7 +132,7 @@ subcommands as well:
 
 ## Ongoing Migration to Slurm-GCP v6
 
-[Slurm-GCP](https://github.com/GoogleCloudPlatform/slurm-gcp) is the set of
+[Slurm-GCP](https://github.com/ben-nag/a-slurm-gcp) is the set of
 scripts and tools that automate the installation, deployment, and certain
 operational aspects of [Slurm](https://slurm.schedmd.com/overview.html) on
 Google Cloud Platform. It is recommended to use Slurm-GCP through the HPC
@@ -864,7 +864,7 @@ The blueprint contains 3 groups:
 
 1. The first group creates a network and generates the scripts that will install
    Slurm. This uses the Ansible Playbook contained in the
-   [Slurm on GCP](https://github.com/GoogleCloudPlatform/slurm-gcp) repo.
+   [Slurm on GCP](https://github.com/ben-nag/a-slurm-gcp) repo.
 2. The second group executes the build using Packer to run the scripts from the
    first group. This can take ~30 min and will generate a custom Slurm image in
    your project.
@@ -886,7 +886,7 @@ The blueprint contains 3 groups:
 > ```
 
 Similar to the [hpc-slurm.yaml] example, but using Ubuntu 20.04 instead of CentOS 7.
-[Other operating systems] are supported by SchedMD for the the Slurm on GCP project and images are listed [here](https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#published-image-family). Only the examples listed in this page been tested by the Cloud HPC Toolkit team.
+[Other operating systems] are supported by SchedMD for the the Slurm on GCP project and images are listed [here](https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#published-image-family). Only the examples listed in this page been tested by the Cloud HPC Toolkit team.
 
 The cluster will support 2 partitions named `debug` and `compute`.
 The `debug` partition is the default partition and runs on smaller
@@ -895,7 +895,7 @@ specifying in the `srun` command via the `--partition` flag. The `compute`
 partition runs on compute optimized nodes of type `cs-standard-60`. The
 `compute` partition may require additional quota before using.
 
-[Other operating systems]: https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#supported-operating-systems
+[Other operating systems]: https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#supported-operating-systems
 [hpc-slurm-ubuntu2004.yaml]: ../community/examples/hpc-slurm-ubuntu2004.yaml
 
 #### Quota Requirements for hpc-slurm-ubuntu2004.yaml
@@ -926,7 +926,7 @@ For this example the following is needed in the selected region:
 > ```
 
 Similar to the [hpc-slurm-v6.yaml] example, but using Ubuntu 20.04 instead of CentOS 7.
-[Other operating systems] are supported by SchedMD for the the Slurm on GCP project and images are listed [here](https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#published-image-family). Only the examples listed in this page been tested by the Cloud HPC Toolkit team.
+[Other operating systems] are supported by SchedMD for the the Slurm on GCP project and images are listed [here](https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#published-image-family). Only the examples listed in this page been tested by the Cloud HPC Toolkit team.
 
 The cluster will support 2 partitions named `debug` and `compute`.
 The `debug` partition is the default partition and runs on smaller
@@ -935,7 +935,7 @@ specifying in the `srun` command via the `--partition` flag. The `compute`
 partition runs on compute optimized nodes of type `cs-standard-60`. The
 `compute` partition may require additional quota before using.
 
-[Other operating systems]: https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#supported-operating-systems
+[Other operating systems]: https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#supported-operating-systems
 [hpc-slurm-ubuntu2004-v6.yaml]: ../community/examples/hpc-slurm-ubuntu2004-v6.yaml
 
 #### Quota Requirements for hpc-slurm-ubuntu2004-v6.yaml
@@ -1227,7 +1227,7 @@ tuned for the execution of many short-duration, loosely-coupled (non-MPI) jobs.
 
 For more information see:
 
-* [Slurm on Google Cloud High Throughput documentation](https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/htc.md)
+* [Slurm on Google Cloud High Throughput documentation](https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/htc.md)
 * [General Slurm High Throughput documentation](https://slurm.schedmd.com/high_throughput.html)
 
 [htc-slurm.yaml]: ../community/examples/htc-slurm.yaml

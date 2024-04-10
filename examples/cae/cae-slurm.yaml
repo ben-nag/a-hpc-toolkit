@@ -36,7 +36,7 @@ vars:
   # zone: europe-west4-b
   region: us-central1
   zone: us-central1-a
-  # Visit https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#published-image-family
+  # Visit https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#published-image-family
   # for a list of valid family options with Slurm; note: the image types for the compute nodes
   # and the Chrome Remote Desktop (CRD) need to have the same Slurm base.
   instance_image:

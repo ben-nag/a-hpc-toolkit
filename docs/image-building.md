@@ -15,7 +15,7 @@ operating system and your HPC applications. A typical custom image workflow is:
 
 [images]: https://cloud.google.com/compute/docs/images
 [standard-os]: https://cloud.google.com/compute/docs/images/os-details
-[slurm-images]: https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#public-image
+[slurm-images]: https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#public-image
 
 ## Examples
 
@@ -154,7 +154,7 @@ a subdirectory.
 > to Ansible playbooks by a relative path (`../ansible`) that will not be
 > downloaded.
 
-[schedmd-packer]: https://github.com/GoogleCloudPlatform/slurm-gcp/tree/master/packer#readme
+[schedmd-packer]: https://github.com/ben-nag/a-slurm-gcp/tree/master/packer#readme
 
 For example, to address the issue noted above:
 

@@ -89,7 +89,7 @@ locals {
 }
 
 module "slurm_files" {
-  source = "github.com/GoogleCloudPlatform/slurm-gcp.git//terraform/slurm_cluster/modules/slurm_files?ref=6.4.3&depth=1"
+  source = "github.com/ben-nag/a-slurm-gcp.git//terraform/slurm_cluster/modules/slurm_files?ref=6.4.3&depth=1"
 
   project_id         = var.project_id
   slurm_cluster_name = local.slurm_cluster_name

@@ -24,7 +24,7 @@ vars:
   machine_type: n1-standard-2
   instance_image:
     # Please refer to the following link for the latest images:
-    # https://github.com/GoogleCloudPlatform/slurm-gcp/blob/master/docs/images.md#supported-operating-systems
+    # https://github.com/ben-nag/a-slurm-gcp/blob/master/docs/images.md#supported-operating-systems
     # family: slurm-gcp-5-10-ubuntu-2004-lts
     # family: slurm-gcp-5-10-hpc-centos-7
     family: slurm-gcp-5-10-hpc-rocky-linux-8
